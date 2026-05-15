@@ -505,7 +505,6 @@ section { padding: clamp(5rem, 9vw, 8rem) 0; position: relative; }
 .leader__photo {
   width: 88px; height: 88px; border-radius: 22px;
   object-fit: cover;
-  object-position: center;
   border: 1px solid var(--line-2);
   box-shadow: var(--shadow-card);
 }

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vision Public School — Sikar, Rajasthan</title>
+<meta name="description" content="Vision Public School, Sikar — Shaping Minds, Building Futures. A modern, value-driven school behind Ramlila Maidan, Sikar, Rajasthan." />
+<meta name="theme-color" content="#05060d" />
+<meta name="color-scheme" content="dark" />
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Vision Public School — Sikar, Rajasthan" />
+<meta property="og:description" content="A modern, value-driven school in the heart of Sikar — shaping minds, building futures." />
+<meta property="og:image" content="images/hero.jpg" />
+<meta property="og:locale" content="en_IN" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Vision Public School — Sikar, Rajasthan" />
+<meta name="twitter:description" content="A modern, value-driven school in the heart of Sikar — shaping minds, building futures." />
+<meta name="twitter:image" content="images/hero.jpg" />
+
+<!-- Favicon (inline SVG, dark-mode friendly) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%236ee7ff'/%3E%3Cstop offset='1' stop-color='%239b8cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%2305060d'/%3E%3Cpath d='M12 26l20-9 20 9-20 9-20-9zm8 6v9c0 3 5 6 12 6s12-3 12-6v-9' fill='none' stroke='url(%23g)' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3Ccircle cx='52' cy='30' r='2' fill='%23ffc66b'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+<link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
+
+<noscript>
+  <style>
+    .reveal, .reveal[data-delay] { opacity: 1 !important; transform: none !important; }
+    .cursor-glow { display: none !important; }
+  </style>
+</noscript>
+</head>
+<body>
+
+<!-- Ambient background: dot grid + floating orbs + cursor glow -->
+<div class="ambient" aria-hidden="true">
+  <div class="orb orb--cyan"></div>
+  <div class="orb orb--violet"></div>
+  <div class="orb orb--gold"></div>
+</div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="brand" aria-label="Vision Public School — Home">
+      <span class="brand__mark"><i class="fa-solid fa-graduation-cap"></i></span>
+      <span>
+        <span class="brand__name">Vision Public School</span>
+        <span class="brand__sub">EST · Sikar · RJ</span>
+      </span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav__cta">Visit Us <i class="fa-solid fa-arrow-right"></i></a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars" id="navIcon"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO — title + bento tiles
+============================================================ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero__layout">
+      <div>
+        <span class="eyebrow hero__pill reveal">Admissions Open · 2026—27</span>
+        <h1 class="display hero__title reveal" data-delay="1">
+          Shaping <span class="italic">minds,</span><br />
+          building <span class="grad">futures.</span>
+        </h1>
+        <p class="hero__sub reveal" data-delay="2">
+          A modern, value-driven school in the heart of Sikar — where curiosity is engineered,
+          character is forged, and every child is seen.
+        </p>
+        <div class="hero__ctas reveal" data-delay="3">
+          <a href="#contact" class="btn btn--primary">
+            Schedule a Visit <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#about" class="btn btn--ghost">
+            <i class="fa-regular fa-circle-play"></i> Discover the School
+          </a>
+        </div>
+      </div>
+
+      <!-- Bento panel: photo + metrics + live -->
+      <div class="hero__bento reveal" data-delay="2">
+        <!-- Photo tile -->
+        <div class="tile tile--photo">
+          <img src="images/hero.jpg" alt="Vision Public School campus" width="900" height="1200" fetchpriority="high" decoding="async" />
+          <div class="tile__label">
+            <span class="k">// Campus</span>
+            <span class="v">Behind Ramlila Maidan, Sikar</span>
+          </div>
+        </div>
+
+        <!-- Metric: students -->
+        <div class="tile tile--metric">
+          <span class="corner">01</span>
+          <div class="metric-num">1,200<span style="font-size:.5em;color:var(--ink-3);">+</span></div>
+          <span class="metric-lbl">Bright learners</span>
+        </div>
+
+        <!-- Metric: years -->
+        <div class="tile tile--metric">
+          <span class="corner">02</span>
+          <div class="metric-num">25<span style="font-size:.5em;color:var(--ink-3);">yrs</span></div>
+          <span class="metric-lbl">Years of trust</span>
+        </div>
+
+        <!-- Live tile -->
+        <div class="tile tile--live" style="grid-column: span 2;">
+          <span class="live-dot">Live · Upcoming</span>
+          <div class="live-body">Annual Sports Day — track &amp; field across all four houses.</div>
+          <div class="live-when">12 December 2026 · 9:00 AM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MARQUEE STRIP
+============================================================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">Curiosity <i class="fa-solid fa-circle"></i> Character</span>
+    <span class="marquee__item">Character <i class="fa-solid fa-circle"></i> Excellence</span>
+    <span class="marquee__item">Excellence <i class="fa-solid fa-circle"></i> Community</span>
+    <span class="marquee__item">Community <i class="fa-solid fa-circle"></i> Curiosity</span>
+    <span class="marquee__item">Curiosity <i class="fa-solid fa-circle"></i> Character</span>
+    <span class="marquee__item">Character <i class="fa-solid fa-circle"></i> Excellence</span>
+    <span class="marquee__item">Excellence <i class="fa-solid fa-circle"></i> Community</span>
+    <span class="marquee__item">Community <i class="fa-solid fa-circle"></i> Curiosity</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     ABOUT — leaders + values
+============================================================ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__head">
+      <div>
+        <span class="eyebrow reveal">Welcome</span>
+        <h2 class="display reveal" data-delay="1" style="margin-top:1.25rem;font-size:clamp(2rem,4.4vw,3.2rem);">
+          A school built on <span class="grad">care, curiosity,</span><br />
+          and quiet excellence.
+        </h2>
+      </div>
+      <p class="lede about__lede reveal" data-delay="2">
+        For over two decades, Vision Public School has nurtured generations of students from
+        Sikar and beyond. We believe a great school feels like a second home — rigorous in
+        learning, warm in spirit, and rooted in the values that prepare children for life.
+      </p>
+    </div>
+
+    <div class="leaders">
+      <article class="leader reveal" data-delay="1">
+        <div class="leader__top">
+          <img class="leader__photo" src="images/director.jpeg" alt="Mr. Anil Kumar Saini, Director" width="88" height="88" loading="lazy" decoding="async" />
+          <div>
+            <div class="leader__role">// Director</div>
+            <h3 class="leader__name">Mr. Anil Kumar Saini</h3>
+          </div>
+        </div>
+        <p class="leader__bio">
+          A visionary educator with over 25 years in academic leadership, Mr. Saini founded
+          Vision Public School with a simple promise: build a school where every child is
+          known by name and helped to find their path.
+        </p>
+        <p class="leader__quote">
+          Education isn't about filling a vessel — it's about lighting a fire.
+        </p>
+      </article>
+
+      <article class="leader reveal" data-delay="2">
+        <div class="leader__top">
+          <img class="leader__photo" src="images/principal.jpeg" alt="Mrs. Swati Saini, Principal" width="88" height="88" loading="lazy" decoding="async" />
+          <div>
+            <div class="leader__role">// Principal</div>
+            <h3 class="leader__name">Mrs. Swati Saini</h3>
+          </div>
+        </div>
+        <p class="leader__bio">
+          A passionate teacher-leader, Mrs. Saini brings warmth, structure, and high
+          expectations to everything she does. She personally mentors faculty and meets
+          parents with the care they'd hope for.
+        </p>
+        <p class="leader__quote">
+          Each child is a story waiting to be heard — and supported.
+        </p>
+      </article>
+    </div>
+
+    <!-- Values grid -->
+    <div class="values">
+      <div class="value reveal" data-delay="1">
+        <span class="value__idx">/01</span>
+        <div class="value__icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="value__title">Strong Academics</div>
+        <p class="value__text">A balanced curriculum that builds depth, curiosity and exam-readiness.</p>
+      </div>
+      <div class="value reveal" data-delay="2">
+        <span class="value__idx">/02</span>
+        <div class="value__icon"><i class="fa-solid fa-heart"></i></div>
+        <div class="value__title">Real Care</div>
+        <p class="value__text">Small classes, attentive mentors, and a culture where children feel seen.</p>
+      </div>
+      <div class="value reveal" data-delay="3">
+        <span class="value__idx">/03</span>
+        <div class="value__icon"><i class="fa-solid fa-futbol"></i></div>
+        <div class="value__title">Sport &amp; Arts</div>
+        <p class="value__text">Daily activity, music, and theatre that grow confidence beyond the classroom.</p>
+      </div>
+      <div class="value reveal" data-delay="4">
+        <span class="value__idx">/04</span>
+        <div class="value__icon"><i class="fa-solid fa-microscope"></i></div>
+        <div class="value__title">Hands-on Science</div>
+        <p class="value__text">Modern labs and projects that turn ideas into experiments — and discovery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+============================================================ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow reveal">A day at Vision</span>
+        <h2 class="display reveal" data-delay="1" style="margin-top:1.25rem;font-size:clamp(2rem,4.4vw,3.2rem);">
+          Moments from our <span class="grad">classrooms, fields</span><br />and stages.
+        </h2>
+      </div>
+      <p class="lede reveal" data-delay="2">
+        Real photos from real days — the energy you'll feel the moment you walk in.
+      </p>
+    </div>
+
+    <div class="gallery__grid" id="galleryGrid">
+      <figure class="g-item g-item--wide reveal" data-caption="Classroom in session">
+        <span class="g-cap__num">01</span>
+        <img src="images/gallery-01-classroom.jpg" alt="Classroom in session" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> Classroom in session</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-delay="1" data-caption="Students collaborating">
+        <span class="g-cap__num">02</span>
+        <img src="images/gallery-02-students.jpg" alt="Students collaborating" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> Students collaborating</figcaption>
+      </figure>
+      <figure class="g-item g-item--tall reveal" data-delay="2" data-caption="The school library">
+        <span class="g-cap__num">03</span>
+        <img src="images/gallery-03-library.jpg" alt="The school library" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> The school library</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-delay="3" data-caption="Hands-on learning">
+        <span class="g-cap__num">04</span>
+        <img src="images/gallery-04-learning.jpg" alt="Hands-on learning" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> Hands-on learning</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-caption="Playground &amp; sport">
+        <span class="g-cap__num">05</span>
+        <img src="images/gallery-05-playground.jpg" alt="Playground and sport" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> Playground &amp; sport</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-delay="1" data-caption="Science laboratory">
+        <span class="g-cap__num">06</span>
+        <img src="images/gallery-06-lab.jpg" alt="Science laboratory" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> Science laboratory</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-delay="2" data-caption="Group of students">
+        <span class="g-cap__num">07</span>
+        <img src="images/gallery-07-group.jpg" alt="Group of students" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> Group of students</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-delay="3" data-caption="The school building">
+        <span class="g-cap__num">08</span>
+        <img src="images/gallery-08-building.jpg" alt="The school building" loading="lazy" decoding="async" />
+        <figcaption class="g-cap"><span class="g-cap__btn"><i class="fa-solid fa-expand"></i></span> The school building</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <button class="lb__btn lb__close" id="lbClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lb__btn lb__prev" id="lbPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+  <img id="lbImg" src="" alt="" />
+  <button class="lb__btn lb__next" id="lbNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="lb__counter" id="lbCounter">1 / 8</div>
+</div>
+
+<!-- ============================================================
+     EVENTS
+============================================================ -->
+<section class="events" id="events">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow reveal">Life at school</span>
+        <h2 class="display reveal" data-delay="1" style="margin-top:1.25rem;font-size:clamp(2rem,4.4vw,3.2rem);">
+          Events &amp; <span class="grad">celebrations.</span>
+        </h2>
+      </div>
+      <p class="lede reveal" data-delay="2">
+        From sports days to science fairs — moments that bring our community together.
+      </p>
+    </div>
+
+    <div class="events__grid">
+      <article class="event reveal" data-delay="1">
+        <div class="event__media">
+          <img src="images/event-sports-day.jpg" alt="Annual Sports Day" loading="lazy" decoding="async" />
+          <div class="event__date"><span class="d">12</span><span class="m">Dec</span></div>
+        </div>
+        <div class="event__body">
+          <div class="event__meta"><i class="fa-solid fa-trophy"></i> Athletics</div>
+          <h3 class="event__title">Annual Sports Day 2026</h3>
+          <p class="event__text">
+            Hundreds of students, four houses, one electric afternoon — track, field, and team
+            events that bring the whole community to the playground.
+          </p>
+          <a href="#gallery" class="event__link">View highlights <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="event reveal" data-delay="2">
+        <div class="event__media">
+          <img src="images/event-science.jpg" alt="Science Exhibition" loading="lazy" decoding="async" />
+          <div class="event__date"><span class="d">04</span><span class="m">Feb</span></div>
+        </div>
+        <div class="event__body">
+          <div class="event__meta"><i class="fa-solid fa-flask"></i> Academics</div>
+          <h3 class="event__title">Science Exhibition</h3>
+          <p class="event__text">
+            Students from grades 6–10 present working models on energy, robotics and
+            sustainability — a celebration of curiosity and craft.
+          </p>
+          <a href="#gallery" class="event__link">View highlights <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="event reveal" data-delay="3">
+        <div class="event__media">
+          <img src="images/event-independence-day.jpg" alt="Independence Day Celebration" loading="lazy" decoding="async" />
+          <div class="event__date"><span class="d">15</span><span class="m">Aug</span></div>
+        </div>
+        <div class="event__body">
+          <div class="event__meta"><i class="fa-solid fa-flag"></i> Cultural</div>
+          <h3 class="event__title">Independence Day Celebration</h3>
+          <p class="event__text">
+            A morning of patriotic songs, drill performances and student speeches — honouring
+            the spirit of the nation, on our school grounds.
+          </p>
+          <a href="#gallery" class="event__link">View highlights <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOCATION / MAP
+============================================================ -->
+<section class="location" id="location">
+  <div class="container location__grid">
+    <div>
+      <span class="eyebrow reveal">Find us</span>
+      <h2 class="display reveal" data-delay="1" style="margin-top:1.25rem;font-size:clamp(2rem,4.4vw,3.2rem);">
+        Visit our <span class="grad">campus.</span>
+      </h2>
+      <p class="lede reveal" data-delay="2">
+        We'd love to show you around. Drop in during school hours, or schedule a guided tour
+        with the admissions team.
+      </p>
+
+      <div class="info-list">
+        <div class="info-row reveal" data-delay="1">
+          <div class="info-row__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="info-row__label">// Address</div>
+            <div class="info-row__val">Behind Ramlila Maidan, Sikar, Rajasthan 332001</div>
+          </div>
+        </div>
+        <div class="info-row reveal" data-delay="2">
+          <div class="info-row__icon"><i class="fa-regular fa-clock"></i></div>
+          <div>
+            <div class="info-row__label">// School hours</div>
+            <div class="info-row__val">Mon – Sat · 8:00 AM – 2:30 PM</div>
+          </div>
+        </div>
+        <div class="info-row reveal" data-delay="3">
+          <div class="info-row__icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div class="info-row__label">// Admissions</div>
+            <div class="info-row__val"><a href="tel:+919351069581">+91 9351069581</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-frame reveal" data-delay="2">
+      <iframe
+        title="Vision Public School location, Sikar"
+        src="https://www.google.com/maps?q=Ramlila+Maidan+Sikar+Rajasthan&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen></iframe>
+      <div class="map-pin">
+        <div class="map-pin__ring"></div>
+        <div class="map-pin__dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" id="contact">
+  <div class="container">
+
+    <!-- CTA banner -->
+    <div class="footer__cta reveal">
+      <div>
+        <h3>Ready to see Vision in person?</h3>
+        <p>Schedule a visit and walk our halls — meet the teachers, see the classrooms, and ask anything.</p>
+      </div>
+      <div class="footer__cta-actions">
+        <a href="tel:+919351069581" class="btn btn--primary"><i class="fa-solid fa-phone"></i> Call admissions</a>
+        <a href="mailto:nehasaini2892@gmail.com" class="btn btn--ghost"><i class="fa-regular fa-envelope"></i> Email us</a>
+      </div>
+    </div>
+
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="brand">
+          <span class="brand__mark"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span>
+            <span class="brand__name">Vision Public School</span>
+            <span class="brand__sub">EST · Sikar · RJ</span>
+          </span>
+        </a>
+        <p class="footer__about">
+          A warm, value-driven co-educational school nurturing thoughtful, confident young
+          people from pre-primary through senior secondary.
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="WhatsApp" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#events">Events</a>
+          <a href="#location">Location</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Admissions</h4>
+        <div class="footer__links">
+          <a href="#contact">Schedule a visit</a>
+          <a href="#contact">Apply online</a>
+          <a href="#contact">Download brochure</a>
+          <a href="#contact">Fee structure</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <div class="footer__contact">
+          <div class="row"><i class="fa-solid fa-location-dot"></i><span>Behind Ramlila Maidan,<br />Sikar, Rajasthan 332001</span></div>
+          <div class="row"><i class="fa-solid fa-phone"></i><a href="tel:+919351069581">+91 9351069581</a></div>
+          <div class="row"><i class="fa-solid fa-envelope"></i><a href="mailto:nehasaini2892@gmail.com">nehasaini2892@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div>© 2026 Vision Public School. All rights reserved.</div>
+      <div>
+        <a href="#">Privacy</a> · <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Graceful image fallback
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('error', () => {
+      if (img.dataset.fallback === '1') return;
+      img.dataset.fallback = '1';
+      img.src = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+        `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="%231d4e89"/><stop offset="1" stop-color="%230b2545"/></linearGradient></defs><rect width="800" height="600" fill="url(%23g)"/><text x="400" y="310" font-family="Space Grotesk, sans-serif" font-size="22" fill="rgba(255,255,255,.7)" text-anchor="middle">Photo placeholder</text></svg>`
+      );
+    });
+  });
+
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile menu
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  const navIcon = document.getElementById('navIcon');
+  const setMenu = (open) => {
+    links.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    navIcon.className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  };
+  toggle.addEventListener('click', () => setMenu(!links.classList.contains('is-open')));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Cursor glow
+  const glow = document.getElementById('cursorGlow');
+  if (glow && window.matchMedia('(hover: hover)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let tx = window.innerWidth / 2, ty = window.innerHeight / 2;
+    let cx = tx, cy = ty;
+    window.addEventListener('pointermove', (e) => { tx = e.clientX; ty = e.clientY; });
+    (function raf() {
+      cx += (tx - cx) * 0.15;
+      cy += (ty - cy) * 0.15;
+      glow.style.transform = `translate(${cx}px, ${cy}px) translate(-50%, -50%)`;
+      requestAnimationFrame(raf);
+    })();
+  }
+
+  // Lightbox
+  const grid = document.getElementById('galleryGrid');
+  const items = Array.from(grid.querySelectorAll('.g-item'));
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCounter = document.getElementById('lbCounter');
+  const lbClose = document.getElementById('lbClose');
+  const lbPrev = document.getElementById('lbPrev');
+  const lbNext = document.getElementById('lbNext');
+  let idx = 0;
+
+  const showAt = (i) => {
+    idx = (i + items.length) % items.length;
+    const img = items[idx].querySelector('img');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt || '';
+    lbCounter.textContent = String(idx + 1).padStart(2, '0') + ' / ' + String(items.length).padStart(2, '0');
+  };
+  const open = (i) => {
+    showAt(i);
+    lb.classList.add('is-open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('no-scroll');
+    lbClose.focus();
+  };
+  const close = () => {
+    lb.classList.remove('is-open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('no-scroll');
+  };
+  items.forEach((it, i) => it.addEventListener('click', () => open(i)));
+  lbClose.addEventListener('click', close);
+  lbPrev.addEventListener('click', (e) => { e.stopPropagation(); showAt(idx - 1); });
+  lbNext.addEventListener('click', (e) => { e.stopPropagation(); showAt(idx + 1); });
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lb.classList.contains('is-open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') showAt(idx - 1);
+    else if (e.key === 'ArrowRight') showAt(idx + 1);
+  });
+})();
+</script>
+</body>
+</html>
